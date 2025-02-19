@@ -1,22 +1,22 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
     text-align: center;
-    background-color: #333;
-    margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .game-container {
     max-width: 600px;
     margin: auto;
-    background-coloe: #333;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 h1 {
-    color: #333;
+    color: #fff;
 }
 
 #story-text {
@@ -27,38 +27,38 @@ h1 {
 .choice-btn, .exit-btn, #restart-btn {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.choice-btn {
+    font-size: 18px;
     background-color: #555;
     color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
 }
 
-.choice-btn:hover {
+.choice-btn:hover, .exit-btn:hover, #restart-btn:hover {
     background-color: #777;
+}
+
+.choice-btn:active, .exit-btn:active, #restart-btn:active {
+    transform: scale(0.98);
 }
 
 .exit-btn {
-    background-color: #555;
-    color: white;
+    background-color: #a71d2a;
 }
 
 .exit-btn:hover {
-    background-color: #777;
+    background-color: #d9534f;
 }
 
 #restart-btn {
-    background-color: #555;
-    color: white;
+    background-color: #28a745;
     display: none;
 }
 
 #restart-btn:hover {
-    background-color: #777;
+    background-color: #218838;
 }
