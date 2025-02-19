@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интерактивна История</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Текстова Игра</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
         <h1>Интерактивна История</h1>
-        <p id="story-text">Историята ще се появи тук...</p>
-        <button id="choice1" class="choice-btn" onclick="makeChoice(1)"></button>
-        <button id="choice2" class="choice-btn" onclick="makeChoice(2)"></button>
-        <button id="choice3" class="choice-btn" onclick="makeChoice(3)"></button>
+        <p id="story-text">Натисни "Старт", за да започнеш играта.</p>
+        <div id="choices">
+            <button class="choice-btn" onclick="makeChoice(1)">Избор 1</button>
+            <button class="choice-btn" onclick="makeChoice(2)">Избор 2</button>
+            <button class="exit-btn" onclick="exitGame()">Изход от игра</button>
+        </div>
+        <button id="restart-btn" onclick="startGame()">Играй отново</button>
     </div>
     <script src="script.js"></script>
 </body>
