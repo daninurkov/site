@@ -1,7 +1,7 @@
 function getChoice(options) {
     let choice;
     while (true) {
-        choice = prompt(`Какво ще направиш?\n1. ${options[0]}\n2. ${options[1]}\n3. Изход`);
+        choice = prompt(`Какво ще направиш?\n1. ${options[0]}\n2. ${options[1]}\n3. Изход от игра`);
         if (choice === "1" || choice === "2") {
             return parseInt(choice);
         } else if (choice === "3") {
