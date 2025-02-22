@@ -73,9 +73,9 @@ function makeChoice(choice) {
         document.getElementById("story-text").textContent = outcomesRound1[index][choice - 1];
         updateChoices(choices[index]);
     } else if (round === 1) {
-        document.getElementById("story-text").textContent = outcomesRound2[index][choice - 1];
+        document.getElementById("story-text").textContent = outcomesRound2[index][choiceRound2 - 1];
     } else {
-        document.getElementById("story-text").textContent = finalOutcomes[index][choice - 1];
+        document.getElementById("story-text").textContent = finalOutcomes[index][choiceRound3 - 1];
         endGame();
         return;
     }
