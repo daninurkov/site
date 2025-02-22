@@ -55,7 +55,7 @@ function startGame() {
     index = Math.floor(Math.random() * storyStarters.length);
     round = 0;
     document.getElementById("story-text").textContent = storyStarters[index];
-    updateChoices(choices[index]);
+    updateChoices(choices1[index]);
     document.getElementById("restart-btn").style.display = "none";
 }
 
@@ -71,11 +71,12 @@ function updateChoices(options) {
 function makeChoice(choice) {
     if (round === 0) {
         document.getElementById("story-text").textContent = outcomesRound1[index][choice - 1];
-        updateChoices(choices[index]);
+        updateChoices(choicesRound2[index]);
     } else if (round === 1) {
-        document.getElementById("story-text").textContent = outcomesRound2[index][choiceRound2 - 1];
+        document.getElementById("story-text").textContent = outcomesRound2[index][choice - 1];
+        updateChoices(choicesRound3[index]);
     } else {
-        document.getElementById("story-text").textContent = finalOutcomes[index][choiceRound3 - 1];
+        document.getElementById("story-text").textContent = finalOutcomes[index][choice - 1];
         endGame();
         return;
     }
